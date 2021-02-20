@@ -1,35 +1,32 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+// React
+import { useState } from "react";
+
+// Components
+import Menu from "../components/Menu/index";
+
 export default function Home() {
+  const [value, setValue] = useState();
+
+  const handleGetRequest = async () => {
+    const link = "/api/texts";
+    const response = await fetch(link, {
+      method: "GET",
+    });
+
+    const data = await response.text();
+
+    setValue(data);
+  };
+
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{" "}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{" "}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+    <>
+      <Menu />
+      <h1>Home page</h1>
+      <button onClick={handleGetRequest}>Запросить данные</button>
+      <pre>{value}</pre>
+    </>
   );
 }
