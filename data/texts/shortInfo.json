@@ -1,0 +1,29 @@
+{
+  "shortInfo": [
+    {
+      "title": "Cookies",
+      "description": "Cookies are small files which are stored on your computer. They are used to hold data specific to a particular browser and website, and can be accessed either by the web server or your computer. They",
+      "link": "cookies.txt"
+    },
+    {
+      "title": "JavaScript",
+      "description": "JavaScript is a programing language used extensively in the creation of websites. How to update settings Warning: disabling JavaScript can interfere with the functionality of most modern websites.",
+      "link": "javascript.txt"
+    },
+    {
+      "title": "Ad Blocker",
+      "description": "An Ad Blocker is a content filtering browser extension designed to filter out advertisements from rendering within your browser. Whilst useful, Ad Blockers can some times interfere with a websites",
+      "link": "adblocker.txt"
+    },
+    {
+      "title": "Flash",
+      "description": "Flash is a multimedia playback software owned by Adobe, used for producing rich multimedia content such a videos, games, and websites all in your browser. Update To update Flash, please follow the",
+      "link": "flash.txt"
+    },
+    {
+      "title": "Screen Settings",
+      "description": "Modern displays allow for a multitude of calibration options, from your screens resolution, to the number of colors it will render. The calibration of these can effect your browsing experience.",
+      "link": "screensettings.txt"
+    }
+  ]
+}
