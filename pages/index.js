@@ -84,12 +84,11 @@ export default function Home(props) {
 
   // fill summary data for questions from the server
   useEffect(() => {
-    dispatch(
-      browserInfoActions.fillTilesDataAsync()
-      // browserInfoActions.fillTilesData(
-      //   props.currentPageReduxState.browserInfo.tilesInfo
-      // )
-    );
+    dispatch(browserInfoActions.fillTilesDataAsync());
+
+    // browserInfoActions.fillTilesData(
+    //   props.currentPageReduxState.browserInfo.tilesInfo
+    // )
   }, []);
   //fill initial data that we got from the server
   useEffect(() => {
