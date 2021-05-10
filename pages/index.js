@@ -42,7 +42,7 @@ export const getServerSideProps = async (ctx) => {
   const urlLink = "https://" + ctx.req.headers.host;
 
   const store = await initialDispatcher(ctx, initializeStore());
-  await store.dispatch(browserInfoActions.fillTilesDataAsync(urlLink));
+  //await store.dispatch(browserInfoActions.fillTilesDataAsync(urlLink));
 
   await disableSaga(store);
 
@@ -86,8 +86,9 @@ export default function Home(props) {
 
   // fill summary data for questions from the server
   useEffect(() => {
+    const currentUrl = window.location.href;
     dispatch(
-      browserInfoActions.fillTilesDataAsync(window.location.href)
+      browserInfoActions.fillTilesDataAsync(currentUrl)
       // browserInfoActions.fillTilesData(
       //   props.currentPageReduxState.browserInfo.tilesInfo
       // )
