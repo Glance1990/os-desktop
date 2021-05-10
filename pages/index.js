@@ -87,6 +87,7 @@ export default function Home(props) {
   // fill summary data for questions from the server
   useEffect(() => {
     const currentUrl = window.location.href;
+    console.log("-----currentUrl-----", currentUrl);
     dispatch(
       browserInfoActions.fillTilesDataAsync(currentUrl)
       // browserInfoActions.fillTilesData(
@@ -103,6 +104,7 @@ export default function Home(props) {
   useEffect(() => {
     // Function that creates and object with all needed custom info
     const updateObj = createUpdateObjInfo(props.userInfo);
+    console.log("==========props.userInfo===========");
     // update redux state with custom info
     dispatch(browserInfoActions.updateActualData({ updateObj }));
   }, []);

@@ -21,11 +21,11 @@ const TileComponent = (props) => {
   return (
     <Styling>
       <div className={props.className} onClick={() => handleClick(id)}>
-        <div class="o-flexy__block">
+        <div className="o-flexy__block">
           <h3>{title}</h3>
           <p>{customInfo}</p>
         </div>
-        <div class="o-flexy__item">
+        <div className="o-flexy__item">
           <div className="image" dangerouslySetInnerHTML={createMarkup(icon)} />
           <button>Info</button>
         </div>
