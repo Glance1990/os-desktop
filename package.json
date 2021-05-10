@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.2",
+    "postcss": "@^8.0.0",
     "@next/bundle-analyzer": "^10.0.8",
     "clean-css": "^5.1.1",
     "immutable": "^4.0.0-rc.12",
