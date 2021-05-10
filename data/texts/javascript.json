@@ -1,9 +1,0 @@
-{
-    "id": "5d1e344e04286369ad8d4d28",
-    "name": "JavaScript",
-    "url": "https://browsbot.helpscoutdocs.com/article/8-javascript",
-    "related": [],
-    "text": "<p> <a href=\"https://en.wikipedia.org/wiki/JavaScript\">JavaScript</a> is a programing language used extensively in the creation of websites.</p> \n<h1> How to update settings</h1> \n<p> <em><strong>Warning</strong>: disabling JavaScript can interfere with the functionality of most modern websites. <br> </em></p> \n<h2>Chrome</h2> \n<ul> \n <li>Open the <strong>3 dot menu</strong> located in the top right of your browser</li> \n <li>Click <strong>Settings</strong></li> \n <li>Scroll to the bottom and click <strong>Advanced</strong></li> \n <li>Click <strong>Site Settings</strong></li> \n <li>Click <strong>JavaScript</strong></li> \n <li>Update your settings</li> \n</ul>",
-    "linkedArticleIds": {},
-    "deviceHasLeftFeedback": true
-}

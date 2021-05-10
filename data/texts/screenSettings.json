@@ -1,9 +1,0 @@
-{
-    "id": "5d1e46be04286369ad8d4e79",
-    "name": "Screen Settings",
-    "url": "https://browsbot.helpscoutdocs.com/article/9-screen",
-    "related": [],
-    "text": "<p> Modern displays allow for a multitude of calibration options, from your screens resolution, to the number of colors it will render. The calibration of these can effect your browsing experience.</p> \n<h1> Changing your devices resolution</h1> \n<h2>Mac</h2> \n<ul> \n <li>Open <strong>System Preferences</strong></li> \n <li>Click <strong>Displays</strong></li> \n <li>Click the <strong>Color</strong> tab</li> \n <li>Adjust monitor to your desired settings</li> \n</ul> \n<h1>Adjust Retina Display (Mac)</h1> \n<ul> \n <li>Open&nbsp;<strong>System Preferences</strong></li> \n <li>Click&nbsp;<strong>Displays</strong></li> \n <li>Click the&nbsp;<strong>Displays</strong>&nbsp;tab</li> \n <li>Adjust your <strong>scaling preference</strong> and <strong>rotation</strong></li> \n</ul>",
-    "linkedArticleIds": {},
-    "deviceHasLeftFeedback": false
-  }

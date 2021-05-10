@@ -1,9 +1,0 @@
-{
-    "id": "5d1e857604286369ad8d4fc7",
-    "name": "Reduced Motion",
-    "url": "https://browsbot.helpscoutdocs.com/article/12-reduced-motion",
-    "related": [],
-    "text": "<p> Some operating systems allow users to enable reduced motion, which disables dramatic movements throughout the systems interface. Recently web browsers have been adding support for this feature if enabled at an OS level.</p> \n<h1> Enabling reduced motion</h1> \n<h2>Mac</h2> \n<ul> \n <li>Click the <strong>Apple Icon</strong></li> \n <li>Click <strong>System Preferences</strong></li> \n <li>Click <strong>Accessibility</strong></li> \n <li>In the left column, scroll down and click <strong>Display</strong></li> \n <li>Tick the checkbox marked <strong>Reduce motion</strong></li> \n</ul>",
-    "linkedArticleIds": {},
-    "deviceHasLeftFeedback": false
-  }

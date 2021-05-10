@@ -1,9 +1,0 @@
-{
-    "id": "5d1e4b6a04286369ad8d4e9f",
-    "name": "Ad Blocker",
-    "url": "https://browsbot.helpscoutdocs.com/article/11-ad-blocker",
-    "related": [],
-    "text": "<p> An Ad Blocker is a content filtering browser extension designed to filter out advertisements from rendering within your browser. Whilst useful, Ad Blockers can some times interfere with a websites performance.</p> \n<h1> Installing an Ad Blocker</h1> \n<h2>Chrome</h2> \n<ul> \n <li>Visit the <a href=\"https://chrome.google.com/webstore\">Chrome Web Store</a></li> \n <li>Search for <strong>Ad Blocker</strong></li> \n <li>Be sure to check the extensions rating and reviews before installing</li> \n</ul> \n<h1>Disabling an Ad Blocker</h1> \n<h2>Chrome</h2> \n<ul> \n <li>Locate your <strong>Ad Blockers Icon, </strong>on the right&nbsp;next to the Address Bar</li> \n <li>Click the <strong>Icon</strong></li> \n <li>Click the disable button or tag, depending on your extension (often in the form of a power icon)</li> \n <li>Refresh your page to disable the Ad Blocker</li> \n</ul> \n<p> <em><strong>Note</strong>: Ad Blocker will remain disabled on a per site basis in most cases</em></p>",
-    "linkedArticleIds": {},
-    "deviceHasLeftFeedback": false
-  }
