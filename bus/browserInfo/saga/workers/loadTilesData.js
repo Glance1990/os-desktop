@@ -5,7 +5,7 @@ import { put, call } from "redux-saga/effects";
 import { browserInfoActions } from "../../actions";
 
 export function* loadTilesData() {
-  const apiLink = `http://localhost:3000/api/texts/tilesInfo`;
+  const apiLink = `/api/texts/tilesInfo`;
   let status = null;
 
   try {
