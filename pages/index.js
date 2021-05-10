@@ -15,6 +15,7 @@ import { selectInfoBoxState } from "../bus/info/selectors";
 import { selectTilesInfo } from "../bus/browserInfo/selectors";
 // Actions
 import { browserInfoActions } from "../bus/browserInfo/actions";
+import { infoActions } from "../bus/info/actions";
 // Components
 import Menu from "../components/Menu/index";
 import Box from "../components/Box/index";
@@ -25,7 +26,7 @@ import AdressBar from "../components/AdressBar";
 // Styles
 import { ThemeProvider } from "styled-components";
 import Styling from "./index.styles";
-//import { GlobalStyles } from "../styles/GlobalStyles";
+import { GlobalStyles } from "../styles/GlobalStyles";
 import theme from "../theme/schema";
 
 // other
@@ -81,7 +82,7 @@ export default function Home(props) {
     setThemeName(themeNames[randomThemeName]);
   };
 
-  // fill initial data that we got from the server
+  // fill summary data for questions from the server
   useEffect(() => {
     dispatch(
       browserInfoActions.fillTilesData(
@@ -89,7 +90,13 @@ export default function Home(props) {
       )
     );
   }, []);
-  // Updcat custom data
+
+  //fill initial data that we got from the server
+  useEffect(() => {
+    dispatch(infoActions.loadSummaryInfoData(false));
+  }, []);
+
+  // Update custom data
   useEffect(() => {
     // Function that creates and object with all needed custom info
     const updateObj = createUpdateObjInfo(props.userInfo);
@@ -100,6 +107,7 @@ export default function Home(props) {
   return (
     <>
       <ThemeProvider theme={theme[themeName]}>
+        <GlobalStyles />
         <Styling>
           <Menu changeTheme={changeTheme} />
           <main>

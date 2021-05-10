@@ -4,11 +4,9 @@ import { put, call } from "redux-saga/effects";
 // Instruments
 import { infoActions } from "../../actions";
 
-export function* loadSummaryData() {
+export function* loadSummaryData({ payload }) {
   const apiLink = "/api/texts/shortinfo";
   let status = null;
-
-  console.log("here we are");
 
   try {
     const response = yield call(fetch, apiLink);
@@ -19,7 +17,12 @@ export function* loadSummaryData() {
 
     yield put(infoActions.fillSummaryData(results));
 
-    yield put(infoActions.toggleInfoBox());
+    // if we have passed a flag false,
+    // than it meeans it the first load an we dont
+    // want to just open popup
+    if (payload !== false) {
+      yield put(infoActions.toggleInfoBox());
+    }
   } catch (error) {
     console.log(error);
   } finally {

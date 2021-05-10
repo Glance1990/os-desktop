@@ -8,7 +8,8 @@ const Styling = styled.div`
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-template-rows: repeat(5, 110px);
-    grid-gap: 25px;    
+    grid-gap: 25px;
+    background: ${(props) => props.theme.colors.dashboardBackground};
     `}
     > div {
       margin: 15px 0;

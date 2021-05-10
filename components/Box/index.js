@@ -10,6 +10,7 @@ import {
 } from "../../bus/info/selectors";
 // Styling
 import Styling from "./index.styles.js";
+import { withTheme } from "styled-components";
 // Components
 import PreviewComponent from "../PreviewComponent";
 import FullAnswerComponent from "../FullAnswerComponent";
@@ -32,8 +33,6 @@ const Box = (props, state) => {
     return selectOpenedArticles(state);
   });
 
-  console.log("openedArticlesData", openedArticlesData.size);
-
   const handleArticleClose = () => {
     dispatch(infoActions.closeCustomInfoData());
   };
@@ -48,9 +47,9 @@ const Box = (props, state) => {
   });
 
   return boxOpen ? (
-    <div className={props.className}>
+    <Styling>
       <div
-        className={`box ${openedArticlesData.size ? "article-active" : null}`}
+        className={`box ${openedArticlesData.length ? "article-active" : null}`}
       >
         <h3>Instant Answers</h3>
         <ul className="summarydata">{summaryJSX}</ul>
@@ -61,8 +60,8 @@ const Box = (props, state) => {
           </article>
         ) : null}
       </div>
-    </div>
+    </Styling>
   ) : null;
 };
 
-export default Styling(Box);
+export default withTheme(Box);

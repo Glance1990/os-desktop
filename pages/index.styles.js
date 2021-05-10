@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { media } from "../styles/index";
 
 const Styling = styled.div`
-  background: ${(props) => props.theme.colors.bodyColor};
   .container {
     background: ${(props) => props.theme.colors.containerWindowColor};
     border: 1px solid #142c69;

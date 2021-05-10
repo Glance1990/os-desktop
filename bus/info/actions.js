@@ -58,9 +58,10 @@ export const infoActions = {
       payload: link,
     };
   },
-  loadSummaryInfoData: () => {
+  loadSummaryInfoData: (flagOpenBox) => {
     return {
       type: types.LOAD_SUMMARY_DATA_ASYNC,
+      payload: flagOpenBox,
     };
   },
 };

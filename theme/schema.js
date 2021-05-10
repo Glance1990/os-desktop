@@ -11,6 +11,7 @@ const theme = {
       barColor: "#FFF3DD",
 
       bodyColor: "#142C69",
+      bodyBackground: "#142C69 url('./pixels-dark.svg') top left",
       containerWindowColor: "#FFF3DD",
       menuBackgroundColor: "#FFF3DD",
       svgIconColor: "#142C69",
@@ -21,6 +22,7 @@ const theme = {
       addresBarSquaresColor: "#FFF3DD",
       addresBarSquaresBorderColor: "#142C69",
       addresBarSquaresBoxShadow: "inset 1px 1px 0 0 #fff",
+      dashboardBackground: "url(./pixels-light.svg) top left",
       text: {
         primary: "#142C69",
         secondary: "#5c5a57",
@@ -49,6 +51,7 @@ const theme = {
       barColor: "#0F1D19",
 
       bodyColor: "#44DEB5",
+      bodyBackground: "#44DEB5 url('./pixels-dark.svg') top left",
       containerWindowColor: "#0F1D19",
       menuBackgroundColor: "#0F1D19",
       svgIconColor: "#fff",
@@ -59,6 +62,7 @@ const theme = {
       addresBarSquaresColor: "#0F1D19",
       addresBarSquaresBorderColor: "#fff",
       addresBarSquaresBoxShadow: "none",
+      dashboardBackground: "url(./pixels.svg) top left",
       text: {
         primary: "#FFFFFF",
         secondary: "#5c5a57",
@@ -87,6 +91,7 @@ const theme = {
       barColor: "#142C69",
 
       bodyColor: "#008081",
+      bodyBackground: "#008081 url('./pixels-dark.svg') top left",
       containerWindowColor: "#C6CECF",
       menuBackgroundColor: "#C6CECF",
       svgIconColor: "#191516",
@@ -97,6 +102,7 @@ const theme = {
       addresBarSquaresColor: "#C6CECF",
       addresBarSquaresBorderColor: "#4E5252",
       addresBarSquaresBoxShadow: "inset 1px 1px 0 0 #fff",
+      dashboardBackground: "url(./pixels-light.svg) top left",
       text: {
         primary: "#142C69",
         secondary: "#5c5a57",
@@ -121,6 +127,7 @@ const theme = {
       barColor: "#FFFFFF",
 
       bodyColor: "#dfe0f5",
+      bodyBackground: "#dfe0f5 url('./pixels-dark.svg') top left",
       containerWindowColor: "#fff",
       menuBackgroundColor: "#fff",
       svgIconColor: "#142C69",
@@ -131,6 +138,7 @@ const theme = {
       addresBarSquaresColor: "#fff",
       addresBarSquaresBorderColor: "#142C69",
       addresBarSquaresBoxShadow: "none",
+      dashboardBackground: "url(./pixels-dark.svg) top left",
       text: {
         primary: "#fff",
         secondary: "#5c5a57",
@@ -155,6 +163,7 @@ const theme = {
       barColor: "#FFE1E7",
 
       bodyColor: "#6B6BA9",
+      bodyBackground: "#6B6BA9 url('./pixels-dark.svg') top left",
       containerWindowColor: "#FFE1E7",
       menuBackgroundColor: "#FFE1E7",
       svgIconColor: "#142C69",
@@ -165,6 +174,7 @@ const theme = {
       addresBarSquaresColor: "#FFE1E7",
       addresBarSquaresBorderColor: "#142C69",
       addresBarSquaresBoxShadow: "inset 1px 1px 0 0 #fff",
+      dashboardBackground: "url(./pixels-light.svg) top left",
       text: {
         primary: "#142C69",
         secondary: "#5c5a57",
