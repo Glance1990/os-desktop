@@ -4,10 +4,9 @@ import { put, call } from "redux-saga/effects";
 // Instruments
 import { browserInfoActions } from "../../actions";
 
-export function* loadTilesData({ urlHostLink }) {
-  console.log("urlHostLinkurlHostLink", urlHostLink);
-  const apiLink = urlHostLink
-    ? `${urlHostLink}api/texts/tilesInfo`
+export function* loadTilesData({ payload }) {
+  const apiLink = payload
+    ? `${payload}api/texts/tilesInfo`
     : "http://localhost:3000/api/texts/tilesInfo";
 
   let status = null;
