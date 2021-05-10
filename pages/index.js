@@ -86,9 +86,7 @@ export default function Home(props) {
 
   // fill summary data for questions from the server
   useEffect(() => {
-    const currentUrl = window.location.href;
     dispatch(
-      //browserInfoActions.fillTilesDataAsync(currentUrl)
       browserInfoActions.fillTilesData(
         props.currentPageReduxState.browserInfo.tilesInfo
       )

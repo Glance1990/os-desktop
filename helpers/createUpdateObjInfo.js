@@ -17,8 +17,7 @@ export const createUpdateObjInfo = (userInfo) => {
   console.log("userInfouserInfo", userInfo);
   const os = `${userInfo.os.type} ${userInfo.os.version} ${userInfo.os.arch}`;
   const webBrowser = `${userInfo.browser.name} ${userInfo.browser.version}`;
-  const resolution = false;
-  //const resolution = `${userInfo.window.width} x ${userInfo.window.height}`;
+  const resolution = `${window.innerWidth} x ${window.innerHeight}`;
 
   const customInfoObj = {
     os: {
