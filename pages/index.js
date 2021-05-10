@@ -39,8 +39,10 @@ import { Rnd } from "react-rnd";
 export const getServerSideProps = async (ctx) => {
   const userInfo = await getUserInfo(ctx.req);
 
+  const urlLink = "https://" + ctx.req.headers.host;
+
   const store = await initialDispatcher(ctx, initializeStore());
-  await store.dispatch(browserInfoActions.fillTilesDataAsync());
+  await store.dispatch(browserInfoActions.fillTilesDataAsync(urlLink));
 
   await disableSaga(store);
 

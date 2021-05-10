@@ -14,9 +14,10 @@ export const browserInfoActions = {
     };
   },
   // Async
-  fillTilesDataAsync: () => {
+  fillTilesDataAsync: (urlHostLink) => {
     return {
       type: types.FILL_INITIAL_DATA_ASYNC,
+      payload: urlHostLink,
     };
   },
   updateActualDataAsync: (link) => {
