@@ -25,7 +25,7 @@ import AdressBar from "../components/AdressBar";
 
 // Styles
 import { ThemeProvider } from "styled-components";
-import Styling from "./index.styles";
+import Styling from "../styles/homePageStyles.styles";
 import { GlobalStyles } from "../styles/GlobalStyles";
 import theme from "../theme/schema";
 
