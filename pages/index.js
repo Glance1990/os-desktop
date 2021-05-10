@@ -51,7 +51,7 @@ export const getServerSideProps = async (ctx) => {
   };
 
   //const initialReduxState = R.mergeDeepRight();
-
+  console.log("currentPageReduxState", currentPageReduxState);
   return {
     props: { currentPageReduxState, userInfo },
   };
@@ -85,15 +85,15 @@ export default function Home(props) {
   // fill summary data for questions from the server
   useEffect(() => {
     dispatch(
-      browserInfoActions.fillTilesData(
-        props.currentPageReduxState.browserInfo.tilesInfo
-      )
+      browserInfoActions.fillTilesDataAsync()
+      // browserInfoActions.fillTilesData(
+      //   props.currentPageReduxState.browserInfo.tilesInfo
+      // )
     );
   }, []);
-
   //fill initial data that we got from the server
   useEffect(() => {
-    dispatch(infoActions.loadSummaryInfoData(false));
+    return dispatch(infoActions.loadSummaryInfoData(false));
   }, []);
 
   // Update custom data

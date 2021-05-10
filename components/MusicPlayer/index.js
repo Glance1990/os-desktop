@@ -13,9 +13,7 @@ const MusicPlayer = (props) => {
   });
 
   var track_url = "https://soundcloud.com/forss/flickermood";
-  SC.oEmbed(track_url, { auto_play: true }).then(function (oEmbed) {
-    console.log("oEmbed response: ", oEmbed);
-  });
+  SC.oEmbed(track_url, { auto_play: true }).then(function (oEmbed) {});
   // const dispatch = useDispatch();
   // const { customInfo, icon, iconPath, id, title } = props.info;
 

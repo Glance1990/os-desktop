@@ -14,7 +14,7 @@ const InstantAnswersButton = () => {
   });
 
   const dispatch = useDispatch();
-
+  console.log("infoActions.loadSummaryInfoData");
   const handleClick = () => {
     //dispatch(infoActions.toggleInfoBox());
     dispatch(infoActions.loadSummaryInfoData());

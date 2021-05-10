@@ -22,6 +22,6 @@ export function* loadArticleData({ payload }) {
   } catch (error) {
     console.log(error);
   } finally {
-    console.log("yee");
+    console.log("Saga - loadArticleData finished");
   }
 }

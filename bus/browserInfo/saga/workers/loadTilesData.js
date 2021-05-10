@@ -18,6 +18,6 @@ export function* loadTilesData() {
   } catch (error) {
     console.log(error);
   } finally {
-    console.log("yee");
+    console.log("Saga - loadTilesData finished");
   }
 }
