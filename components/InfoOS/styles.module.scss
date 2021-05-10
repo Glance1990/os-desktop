@@ -1,0 +1,14 @@
+.opened {
+    .icon {
+        display: none;
+    }
+}
+
+.closed {
+    .closeButton {
+        display: none;
+    }
+}
+.media {
+    display: flex;
+}

@@ -1,0 +1,24 @@
+{
+    "id": "5d1e31e104286369ad8d4d1f",
+    "name": "Operating System",
+    "url": "https://browsbot.helpscoutdocs.com/article/7-operating-system",
+    "related": [
+      {
+        "id": "5d1e46be04286369ad8d4e79",
+        "name": "Screen Settings",
+        "url": "https://browsbot.helpscoutdocs.com/article/9-screen",
+        "preview": "Modern displays allow for a multitude of calibration options, from your screens resolution, to the number of colors it will render. The calibration of these can effect your browsing experience.",
+        "previewTrimmed": false
+      },
+      {
+        "id": "5d1e857604286369ad8d4fc7",
+        "name": "Reduced Motion",
+        "url": "https://browsbot.helpscoutdocs.com/article/12-reduced-motion",
+        "preview": "Some operating systems allow users to enable reduced motion, which disables dramatic movements throughout the systems interface. Recently web browsers have been adding support for this feature if",
+        "previewTrimmed": false
+      }
+    ],
+    "text": "<p> An <a href=\"https://en.wikipedia.org/wiki/Operating_system\">operating system</a> (<strong style=\"background-color: initial;\">OS</strong>)&nbsp;is system software that manages computer hardware and software resources and provides common services for computer programs.</p> \n<h1> Check your OS version</h1> \n<h2>Mac</h2> \n<ul> \n <li>Click the <strong>Apple Icon</strong> in the top left of your screen</li> \n <li>Click <strong>About this Mac</strong></li> \n <li>Within the overview screen your <strong>macOS</strong> and <strong>version</strong> are shown</li> \n</ul> \n<h1>Update your OS</h1> \n<h2>Mac</h2> \n<ul> \n <li>Click the<strong>&nbsp;Apple Icon</strong>&nbsp;in the top left of your screen</li> \n <li>Click&nbsp;<strong>About this Mac</strong></li> \n <li>Click the <strong>Software Update...</strong> button to check if updates are available</li> \n</ul>",
+    "linkedArticleIds": {},
+    "deviceHasLeftFeedback": false
+  }

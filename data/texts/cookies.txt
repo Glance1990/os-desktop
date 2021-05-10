@@ -1,0 +1,10 @@
+Cookies are small files which are stored on your computer. They are used to hold data specific to a particular browser and website, and can be accessed either by the web server or your computer. They are also sadly inedible. 
+
+Clear or Delete Existing Cookies
+Chrome
+Go to Settings
+Scroll to bottom and click Advanced
+Scroll to Privacy and Security
+Click Clear Browsing Data
+In the modal check Cookies and other site data
+Click the Clear data button
