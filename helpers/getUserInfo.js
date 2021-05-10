@@ -1,7 +1,7 @@
 import { isServer } from "./verifyServer";
 const os = require("os");
 const parser = require("ua-parser-js");
-const { width, height } = require("screenz");
+//const { width, height } = require("screenz");
 
 export const getUserInfo = async (req) => {
   const verifyServer = isServer();
@@ -14,10 +14,10 @@ export const getUserInfo = async (req) => {
       version: ua.os.version,
       arch: os.arch(),
     },
-    window: {
-      width,
-      height,
-    },
+    // window: {
+    //   width,
+    //   height,
+    // },
     browser: ua.browser,
   };
 
