@@ -39,10 +39,10 @@ import { Rnd } from "react-rnd";
 export const getServerSideProps = async (ctx) => {
   const userInfo = await getUserInfo(ctx.req);
 
-  const urlLink = "https://" + ctx.req.headers.host;
+  const urlLink = "http://" + ctx.req.headers.host + "/";
 
   const store = await initialDispatcher(ctx, initializeStore());
-  //await store.dispatch(browserInfoActions.fillTilesDataAsync(urlLink));
+  await store.dispatch(browserInfoActions.fillTilesDataAsync(urlLink));
 
   await disableSaga(store);
 
@@ -87,12 +87,11 @@ export default function Home(props) {
   // fill summary data for questions from the server
   useEffect(() => {
     const currentUrl = window.location.href;
-    console.log("-----currentUrl-----", currentUrl);
     dispatch(
-      browserInfoActions.fillTilesDataAsync(currentUrl)
-      // browserInfoActions.fillTilesData(
-      //   props.currentPageReduxState.browserInfo.tilesInfo
-      // )
+      //browserInfoActions.fillTilesDataAsync(currentUrl)
+      browserInfoActions.fillTilesData(
+        props.currentPageReduxState.browserInfo.tilesInfo
+      )
     );
   }, []);
   //fill initial data that we got from the server
